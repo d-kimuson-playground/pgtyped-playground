@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "run": "esno ./src/index.ts",
+    "dev:pgtyped": "pgtyped -w -c pgtyped.config.json",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@pgtyped/cli": "^1.0.0",
+    "@pgtyped/query": "^1.0.0",
+    "@tsconfig/node16-strictest": "^1.0.1",
+    "@types/pg": "^8.6.5",
+    "esno": "^0.16.3",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "pg": "^8.7.3"
+  }
+}
